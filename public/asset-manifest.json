@@ -1,22 +1,30 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.f4218d02.chunk.js",
-    "main.js.map": "/static/js/main.f4218d02.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.981d0f95.js",
-    "runtime-main.js.map": "/static/js/runtime-main.981d0f95.js.map",
-    "static/js/2.58b24beb.chunk.js": "/static/js/2.58b24beb.chunk.js",
-    "static/js/2.58b24beb.chunk.js.map": "/static/js/2.58b24beb.chunk.js.map",
-    "static/js/3.c0aab6db.chunk.js": "/static/js/3.c0aab6db.chunk.js",
-    "static/js/3.c0aab6db.chunk.js.map": "/static/js/3.c0aab6db.chunk.js.map",
+    "main.js": "/static/js/main.27715698.chunk.js",
+    "main.js.map": "/static/js/main.27715698.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.195a0d51.js",
+    "runtime-main.js.map": "/static/js/runtime-main.195a0d51.js.map",
+    "static/css/2.c1256375.chunk.css": "/static/css/2.c1256375.chunk.css",
+    "static/js/2.d0a897f8.chunk.js": "/static/js/2.d0a897f8.chunk.js",
+    "static/js/2.d0a897f8.chunk.js.map": "/static/js/2.d0a897f8.chunk.js.map",
+    "static/js/3.acff833e.chunk.js": "/static/js/3.acff833e.chunk.js",
+    "static/js/3.acff833e.chunk.js.map": "/static/js/3.acff833e.chunk.js.map",
     "index.html": "/index.html",
+    "static/css/2.c1256375.chunk.css.map": "/static/css/2.c1256375.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.58b24beb.chunk.js.LICENSE.txt": "/static/js/2.58b24beb.chunk.js.LICENSE.txt"
+    "static/js/2.d0a897f8.chunk.js.LICENSE.txt": "/static/js/2.d0a897f8.chunk.js.LICENSE.txt",
+    "static/media/LogoPlazaVea.50ff7887.svg": "/static/media/LogoPlazaVea.50ff7887.svg",
+    "static/media/Logo_Metro_Cencosud.bf1ec230.png": "/static/media/Logo_Metro_Cencosud.bf1ec230.png",
+    "static/media/Logo_Wong_Cencosud.efbd7aed.png": "/static/media/Logo_Wong_Cencosud.efbd7aed.png",
+    "static/media/logo-vivanda-color___4a131c070c81f2e181be2cc9e3e9cad3.686a11e7.svg": "/static/media/logo-vivanda-color___4a131c070c81f2e181be2cc9e3e9cad3.686a11e7.svg",
+    "static/media/tottus.319b652d.svg": "/static/media/tottus.319b652d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.981d0f95.js",
-    "static/js/2.58b24beb.chunk.js",
+    "static/js/runtime-main.195a0d51.js",
+    "static/css/2.c1256375.chunk.css",
+    "static/js/2.d0a897f8.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.f4218d02.chunk.js"
+    "static/js/main.27715698.chunk.js"
   ]
 }
