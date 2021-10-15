@@ -3,6 +3,8 @@ const app = express();
 const port = process.env.PORT || 5000;
 const path = require('path');
 const scrapeIt = require("scrape-it")
+const axios = require('axios')
+const puppeteer = require('puppeteer');
 
 app.use(express.static(path.join(__dirname, 'public'))).listen(port, () => console.log(`Listening on port ${port}`));
 
@@ -90,4 +92,31 @@ app.get('/pilsen', async (req, res) => {
 
 app.get('/', (req, res) => { 
   res.sendFile(path.join(__dirname+'/public/index.html'));
+});
+
+app.get('/plaza', async (req, res) => { 
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://www.plazavea.com.pe/arroz-extra-costeno-bolsa-750g/p');
+  //await page.waitFor(1000);
+  //page.waitForTimeout(1000)
+  let html = await page.content();
+  //console.info(html)
+  //const pageContent = await axios.get("https://www.plazavea.com.pe/arroz-extra-costeno-bolsa-750g/p")
+  const scrapePlazaVea = await scrapeIt.scrapeHTML(html, {
+    //price: ".ProductCard__wrapper .ProductCard__information .ProductCard__price--online .ProductCard__content__price",
+    //name: '.ProductCard__wrapper .ProductCard__information .productName'
+    //price: ".Showcase__salePrice"
+    price: ".ProductCard__price.ProductCard__price--online"
+  })
+  //https://www.metro.pe/arroz-extra-costeno-bolsa-750-g-11386/p
+  //https://www.metro.pe/cerveza-pilsen-callao-pack-12-latas-de-355-ml-c-u-712752/p
+  //https://www.vivanda.com.pe/arroz-extra-costeno-bolsa-750g/p
+  //https://www.vivanda.com.pe/cerveza-pilsen-12-pack-lata-355ml/p
+  /*const product = {}
+  if(scrapePlazaVea.response.statusCode === 200){
+    product['plazaVea'] = scrapePlazaVea.data
+  }
+  res.send(product)*/
+  res.send(scrapePlazaVea)
 });
